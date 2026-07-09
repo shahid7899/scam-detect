@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+  "tasks": [
+	{
+	  "type": "shell",
+	  "label": "Start React App (client)",
+	  "command": "npm start",
+	  "group": "build",
+	  "isBackground": true,
+	  "problemMatcher": [
+		"$tsc"
+	  ],
+	  "args": [],
+	  "options": {
+		"cwd": "${workspaceFolder}/client"
+	  }
+	},
+	{
+	  "type": "shell",
+	  "label": "Start Backend Server (server)",
+	  "command": "npm start",
+	  "group": "build",
+	  "isBackground": true,
+	  "problemMatcher": [],
+	  "options": {
+		"cwd": "${workspaceFolder}/server"
+	  }
+	}
+  ]
+}
